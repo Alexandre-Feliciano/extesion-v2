@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fef3c7; /* amber-100 */
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  /* Tela do formulário */
+  .tela-criacao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fef3c7;
+    box-shadow: inset 0 1px 3px #a1a1aa; /* simula inset-shadow-sm com zinco */
+  }
+  
+  .titulo {
+    font-size: 3rem; /* text-5xl */
+    color: #1f2937;   /* black-700 (aproximado) */
+    font-family: 'Lilita One', cursive;
+    margin: 2.5rem;
+    padding: 0.5rem;
+  }
+  
+  /* Formulário centralizado */
+  .formulario {
+    flex: 1;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Campos de input */
+  .campo {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #9ca3af; /* black-400 (aproximado) */
+    width: 80%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  
+  /* Checkbox */
+  .lembrar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .checkbox {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #9ca3af;
+    border-radius: 0.5rem;
+  }
+  
+  .texto-label {
+    font-size: 0.875rem;
+    color: #1f2937;
+    margin-left: 0.5rem;
+  }
+  
+  /* Botão continuar */
+  .botao {
+    background-color: #1e40af; /* blue-800 */
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 75%;
+    height: 3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .botao:hover {
+    background-color: #3b82f6; /* azul mais claro no hover */
+  }
+  
+  /* Lado direito com logo */
+  .lado-logo {
+    flex: 1;
+    height: 100%;
+    background-color: #fef3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  /* .logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } */
+  
