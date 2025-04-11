@@ -235,3 +235,50 @@ footer {
 }
 
 /* destinado ao modal */
+.modal {
+ 
+  position: fixed; 
+  z-index: 1; 
+  left:25%;
+  top: 24%;
+  width: 60%; 
+  height: 60%; 
+  border-radius: 12px;
+  background-color: #FBF8D9 ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+ 
+  
+}
+.modal::before {
+  display: flex;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
+.modal img {
+  flex: 1;
+  object-fit: cover; 
+  height: 100%;
+  
+}
+
+.btn-modal{
+  
+  display: flexbox;
+  padding: 10px;
+  padding-bottom: 1rem;
+  border-radius: 10%;
+  background-color:#237ce8;
+  color: white;
+  justify-content: center;
+  gap: 10px;
+  
+  
+}
