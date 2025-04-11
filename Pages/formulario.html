@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/CSS/formulario.css">
+    <title>CIRANDA/Crie seu evento</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">Logo</div>
+
+        <div class="barra-pesquisa">
+            <input type="text" class="campo-pesquisa" placeholder="Pesquisar">
+            <button class="botao-pesquisa">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </div>
+
+        <nav>
+            <a href="#">Criar evento</a>
+            <a href="#">Login</a>
+            <a href="#">Cadastro</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+            
+          <input type="file" class="card upload" name="" id="">
+
+            <!-- Visão geral -->
+             
+            <div class="card">
+
+                <h1>Visão geral do evento</h1>
+                
+                <label for="nome">Nome do evento</label>
+                
+                <small>Seja claro e descritivo, com um título que diga às pessoas do que se trata seu evento.</small>
+                
+                <input type="text" id="nome" placeholder="Digite o nome do evento">
+                
+                <label for="">Data e localização</label>
+                
+                <div class="flex-2">
+                    
+                    <div>
+                        <label for="data">Data</label>
+                        <input type="date" id="data">
+                    </div>
+                    
+                    <div>
+                        <label for="hora-inicio">Hora de início</label>
+                        <input type="time" id="hora-inicio">
+                    </div>
+                    
+                    <div>
+                        <label for="hora-fim">Hora de término</label>
+                        <input type="time" id="hora-fim">
+                    </div>
+                    
+                </div>
+                
+                <label for="descricao">Descrição do evento</label>
+                
+                <small>Adicione mais detalhes sobre seu evento e inclua o que as pessoas podem esperar se comparecerem.</small>
+
+                <div class="editor-quill"></div>
+
+            </div>
+
+            <!-- Ingressos -->
+            <div class="card">
+
+                <h1>Configurar ingressos</h1>
+
+                <div class="flex">
+
+                    <button class="btn-pago">Pago</button>
+                    <button class="btn-gratuito">Gratuito</button>
+
+                </div>
+
+                <label for="quantidade">Quantidade disponível</label>
+
+                <input type="number" id="quantidade" placeholder="Ex: 100">
+
+                <label for="preco">Preço</label>
+                <input type="text" id="preco" placeholder="Ex: R$ 100,00">
+
+                <label for="local">Local de venda</label>
+                <input type="text" id="local" placeholder="Ex: Clube da Música">
+
+                <div class="flex-2">
+
+                    <div>
+                        <label for="retirada">Início da retirada</label>
+                        <input type="date" id="retirada">
+                    </div>
+
+                    <div>
+                        <label for="hora-retirada">Hora de início</label>
+                        <input type="time" id="hora-retirada">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="publish-btn">Publicar evento</button>
+
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <script>
+        const quill = new Quill('.editor-quill', {
+            theme: 'snow', 
+          });
+
+    </script>
+</body>
+
+</html>

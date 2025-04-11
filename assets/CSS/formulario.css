@@ -10,7 +10,8 @@
   --azulEscuro:#002244;
   --cinza:#1f2937;
   --cinzaClaro: #EAE9E9;
-  --Branco: white;
+  --Branco: #fff;
+  --preto:#1d1f22;
 
 
 }
@@ -87,4 +88,119 @@ nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
+}
+
+/* Formulários */
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: var(--Branco);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.editor-quill {
+  height: 150px;
+  color: #888;
+  font-size: 16px;
+  border: 2px dashed #ccc;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+}
+
+small{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.format-buttons button {
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.btn-pago{
+  width: 500px;
+  height: 50px;
+  border: solid 2px var(--preto);
+  border-radius: 7px;
+  background-color: var(--Branco);
+  color: var(--preto);
+  font-weight: bold;
+  font-family: 'Unbounded';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-gratuito{
+  width: 500px;
+  height: 50px;
+  border: solid 2px var(--preto);
+  border-radius: 7px;
+  background-color: var(--Branco);
+  color: var(--preto);
+  font-weight: bold;
+  font-family: 'Unbounded';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.publish-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--azul);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.publish-btn:hover {
+  background-color: var(--azulClaro);
 }
