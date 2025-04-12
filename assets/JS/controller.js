@@ -8,3 +8,7 @@ function m_modal() {
 function fecharModal() {
     modal.close();
 }
+
+document.getElementById("btn-comecar").onclick = function() {
+    window.location.href = "/Pages/login.html";
+}
