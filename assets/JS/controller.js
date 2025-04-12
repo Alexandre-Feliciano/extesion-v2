@@ -9,6 +9,31 @@ function fecharModal() {
     modal.close();
 }
 
-document.getElementById("btn-comecar").onclick = function() {
+document.getElementById("btn-comecar").onclick = function () {
     window.location.href = "/Pages/login.html";
 }
+
+// dropdown do perfil
+
+document.addEventListener('DOMContentLoaded', function () {
+    const userToggle = document.getElementById('user-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const icon = document.getElementById('icone-nome');
+
+    userToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('show');
+        dropdownMenu.classList.toggle('hidden');
+        icon.classList.toggle('fa-angle-down');
+        icon.classList.toggle('fa-angle-up');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!userToggle.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+            dropdownMenu.classList.add('hidden');
+            icon.classList.add('fa-angle-down');
+            icon.classList.remove('fa-angle-up');
+        }
+    });
+});

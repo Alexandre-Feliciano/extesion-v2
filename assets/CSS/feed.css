@@ -90,7 +90,10 @@ nav a {
   color: #333;
 }
 
+/* dropdown do usuário */
+
 .conteiner-perfil{
+  position: relative;
   display: flex;
   width: 250px;
   height: 40px;
@@ -110,6 +113,60 @@ nav a {
   margin-left: 8px;
 
 }
+
+#icone-nome {
+  margin-left:8px;
+  margin-top:10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* abaixo do perfil */
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  gap: 10px;
+}
+
+.dropdown-menu li:hover {
+  background-color: var(--amarelo); /* ou qualquer cor que combine */
+}
+
+
 
 /* Sessão de evento */
 
