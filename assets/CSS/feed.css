@@ -90,6 +90,10 @@ nav a {
   color: #333;
 }
 
+nav a:hover {
+  color: var(--azulClaro)
+}
+
 /* dropdown do usuário */
 
 .conteiner-perfil{
@@ -121,7 +125,7 @@ nav a {
 
 .dropdown-menu {
   position: absolute;
-  top: 60px; /* abaixo do perfil */
+  top: 60px;
   right: 0;
   background-color: white;
   border-radius: 10px;

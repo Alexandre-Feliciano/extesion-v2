@@ -3,6 +3,7 @@
 
 :root {
   --amareloClaro: #FBF8D9;
+  --amareloForte: #ffea00;
   --amarelo: #F6F0B1;
   --ambar:#fde68a;
   --azul: #005E97;
@@ -43,6 +44,7 @@ header {
 .logo {
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .barra-pesquisa {
