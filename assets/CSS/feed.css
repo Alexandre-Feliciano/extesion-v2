@@ -87,7 +87,7 @@ header {
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--cinza);
 }
 
 nav a:hover {
@@ -127,7 +127,7 @@ nav a:hover {
   position: absolute;
   top: 60px;
   right: 0;
-  background-color: white;
+  background-color: var(--Branco);
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   width: 200px;
@@ -162,12 +162,12 @@ nav a:hover {
   align-items: center;
   padding: 12px 16px;
   text-decoration: none;
-  color: #333;
+  color: var(--cinza);
   gap: 10px;
 }
 
 .dropdown-menu li:hover {
-  background-color: var(--amarelo); /* ou qualquer cor que combine */
+  background-color: var(--amarelo); 
 }
 
 
