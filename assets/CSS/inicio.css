@@ -236,7 +236,7 @@ footer {
 
 /* destinado ao modal */
 .modal {
- 
+  
   position: fixed; 
   z-index: 1; 
   left:25%;
@@ -247,6 +247,7 @@ footer {
   background-color: #FBF8D9 ;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  flex-direction: row;
  
   
 }
@@ -280,5 +281,14 @@ footer {
   justify-content: center;
   gap: 10px;
   
-  
 }
+.modal_texto .modal{
+  font-size: 10px;
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  align-items: center;
+  padding: 20px;
+  text-align: right; /* Ajusta o alinhamento do texto */
+  margin-left: auto; /* Empurra o conteúdo para a direita */
+}
+
+
