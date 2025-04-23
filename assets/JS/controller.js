@@ -6,7 +6,7 @@ function m_modal() {
 }
 
 function fecharModal() {
-    modal.close(); // Fecha o modal
+    modal.close(); // Fecha  modal
 }
 
 // Fecha o modal ao pressionar "Esc"

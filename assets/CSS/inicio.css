@@ -287,7 +287,7 @@ footer {
   justify-content: flex-end; /* Alinha o conteúdo à direita */
   align-items: center;
   padding: 20px;
-  text-align: right; /* Ajusta o alinhamento do texto */
+  text-align: right; /* Ajusta o alinhamento o texto */
   margin-left: auto; /* Empurra o conteúdo para a direita */
 }
 
