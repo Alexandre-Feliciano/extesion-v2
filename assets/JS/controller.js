@@ -7,4 +7,5 @@ function m_modal() {
 
 function fecharModal() {
     modal.close();
+    alert('Modal fechado!');
 }
