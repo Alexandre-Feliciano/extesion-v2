@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/CSS/formulario.css">
+    <link rel="stylesheet" href="/assets/CSS/criar_evento.css">
     <title>CIRANDA/Crie seu evento</title>
 </head>
 
@@ -23,19 +23,40 @@
             </button>
         </div>
 
-        <nav>
-            <a href="#">Criar evento</a>
-            <a href="#">Login</a>
-            <a href="#">Cadastro</a>
-        </nav>
+        <div class="conteiner-perfil hidden" id="user-toggle">
+
+            <div class="caixa-imagem">
+                <!-- <img src="#" alt="imagem do perfil"> -->
+            </div>
+
+            <p class="nome-usuario" >Nome do usuário</p>
+
+            <i class="fas fa-angle-down" id="icone-nome"></i>
+
+            <div class="dropdown-menu hidden" id="dropdown-menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </div>
+
+        </div>
 
     </header>
 
     <main>
 
         <div class="container">
-            
-          <input type="file" class="card upload" name="" id="">
+         
+            <label class="picture" tabindex="0">
+
+                <input type="file" accept="image/*" class="picture_input">
+
+                <span class="picture_image"></span>
+
+            </label>
 
             <!-- Visão geral -->
              
@@ -49,12 +70,17 @@
                 
                 <input type="text" id="nome" placeholder="Digite o nome do evento">
                 
-                <label for="">Data e localização</label>
+                <h3 for="">Data e localização</h3>
                 
                 <div class="flex-2">
                     
                     <div>
-                        <label for="data">Data</label>
+                        <label for="data">Data de início</label>
+                        <input type="date" id="data">
+                    </div>
+
+                    <div>
+                        <label for="data">Data de término</label>
                         <input type="date" id="data">
                     </div>
                     
@@ -103,12 +129,22 @@
                 <div class="flex-2">
 
                     <div>
-                        <label for="retirada">Início da retirada</label>
+                        <label for="retirada">Início das vendas</label>
                         <input type="date" id="retirada">
                     </div>
 
                     <div>
                         <label for="hora-retirada">Hora de início</label>
+                        <input type="time" id="hora-retirada">
+                    </div>
+
+                    <div>
+                        <label for="retirada">Término das vendas</label>
+                        <input type="date" id="retirada">
+                    </div>
+
+                    <div>
+                        <label for="hora-retirada">Hora de término</label>
                         <input type="time" id="hora-retirada">
                     </div>
 
@@ -124,13 +160,14 @@
     </main>
 
     <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-
+    
     <script>
         const quill = new Quill('.editor-quill', {
             theme: 'snow', 
-          });
-
+        });
+        
     </script>
+    <script src="/assets/JS/criar_evento.js"></script>
 </body>
 
 </html>
