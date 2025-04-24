@@ -140,7 +140,7 @@ nav a:hover {
 
 .dropdown-menu.hidden {
   opacity: 0;
-  visibility: hidden;
+  visibility:hidden;
   transform: translateY(-10px);
 }
 

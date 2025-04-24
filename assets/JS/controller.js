@@ -7,7 +7,7 @@ function m_modal() {
 
 function fecharModal() {
     modal.close();
-    alert('Modal fechado!');
+    // alert('Modal fechado!');
 }
 
 document.getElementById("btn-comecar").onclick = function () {
