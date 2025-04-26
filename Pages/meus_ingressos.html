@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/CSS/meus_ingressos.css">
+    <title>CIRANDA/Ingressos</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">Logo</div>
+
+        <div class="barra-pesquisa">
+            <input type="text" class="campo-pesquisa" placeholder="Pesquisar">
+            <button class="botao-pesquisa">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </div>
+
+        <nav>
+
+            <a href="/Pages/criar_evento.html">Criar evento</a>
+
+        </nav>
+
+        <div class="conteiner-perfil hidden" id="user-toggle">
+
+            <div class="caixa-imagem">
+                <!-- <img src="#" alt="imagem do perfil"> -->
+            </div>
+
+            <p class="nome-usuario">Nome do usuário</p>
+
+            <i class="fas fa-angle-down" id="icone-nome"></i>
+
+            <nav class="dropdown-menu hidden" id="dropdown-menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1>Meus Ingressos</h1>
+
+        <section class="container-ingressos">
+
+            <div class="ingresso-card">
+                <h2>Festival de Jazz</h2>
+                <div class="info-evento">
+                    📅 30/06/2025 - 18:00<br>
+                    📍 Teatro Principal - Mucugê
+                </div>
+
+                <div class="card-footer">
+
+                    <span class="status">Confirmado</span>
+                    <button class="btn-detalhes"
+                        onclick="abrirModal('Festival de Jazz', '30/06/2025 - 18:00', 'Teatro Principal - Mucugê')">Ver
+                        detalhes</button>
+
+                </div>
+            </div>
+
+            <div class="ingresso-card">
+                <h2>Festival de Rock</h2>
+                <div class="info-evento">
+                    📅 15/07/2025 - 20:00<br>
+                    📍 Arena Central - Lençóis
+                </div>
+
+                <div class="card-footer">
+
+                    <span class="status">Confirmado</span>
+                    <button class="btn-detalhes"
+                        onclick="abrirModal('Festival de Rock', '15/07/2025 - 20:00', 'Arena Central - Lençóis')">Ver
+                        detalhes</button>
+
+                </div>
+            </div>
+
+            <div class="ingresso-card">
+                <h2>Encontro de Blues</h2>
+                <div class="info-evento">
+                    📅 10/08/2025 - 19:00<br>
+                    📍 Praça do Coreto - Andaraí
+                </div>
+
+                <div class="card-footer">
+
+                    <span class="status">Confirmado</span>
+    
+                    <button class="btn-detalhes" onclick="abrirModal('Encontro de Blues', '10/08/2025 - 19:00', 'Praça do Coreto - Andaraí')">Ver detalhes</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Modal usando <dialog> -->
+        <dialog id="modalDetalhes">
+
+            <div class="modal-content">
+                <button class="fechar" onclick="fecharModal()">✖</button>
+
+                <h2 id="modalTitulo"></h2>
+
+                <p><strong>Data:</strong> <span id="modalData"></span></p>
+                <p><strong>Hora:</strong> <span id="modalHora"></span></p>
+                <p><strong>Local:</strong> <span id="modalLocal"></span></p>
+
+                <button class="btn-cancelar" onclick="cancelarInscricao()">Cancelar Inscrição</button>
+            </div>
+
+        </dialog>
+
+    </main>
+
+    <script src="/assets/JS/meus_ingressos.js"></script>
+
+</body>
+
+</html>

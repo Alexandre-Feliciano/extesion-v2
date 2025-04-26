@@ -1,3 +1,5 @@
+// Input de imagens do formulário de criar evento
+
 const InputFile = document.querySelector(".picture_input"); 
 const pictureImage = document.querySelector(".picture_image");
 const pictureImagetxt = 'Carregar imagem do evento';
@@ -19,7 +21,7 @@ InputFile.addEventListener('change', function(e){
             const img = document.createElement('img');
             img.src = readerTarget.result;
 
-            // Remover texto e inserir imagem
+            
             pictureImage.innerHTML = '';
             pictureImage.appendChild(img);
         });

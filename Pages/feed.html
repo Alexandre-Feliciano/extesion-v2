@@ -11,6 +11,11 @@
 
 <body>
 
+    <dialog>
+
+        
+    </dialog>
+
     <header>
 
         <div class="logo">Logo</div>
@@ -38,36 +43,35 @@
 
             <i class="fas fa-angle-down" id="icone-nome"></i>
 
-            <div class="dropdown-menu hidden" id="dropdown-menu">
+            <nav class="dropdown-menu hidden" id="dropdown-menu">
                 <ul>
                     <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
                     <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
                     <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
                     <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
                 </ul>
-            </div>
+            </nav>
 
         </div>
 
     </header>
 
-    <div class="imagem">
+    <section class="imagem">
 
         <img class="evento-img " src="/assets/img/jacobina.jpg" alt="">
 
         <div class="evento-texto">
 
             <h1> Melhores Eventos na <strong>Chapada</strong></h1>
-            <p>Confira os últimos eventos em toda a chapada. Quer você seja um morador local, novo na área ou esteja
-                apenas de passagem, não faltam coisas diferentes para fazer.</p>
+            <p>Confira os últimos eventos em toda a chapada. Quer você seja um morador local, novo na área ou esteja apenas de passagem, não faltam coisas diferentes para fazer.</p>
         </div>
 
-    </div>
+    </section>
 
     <main>
 
         <h2>Eventos</h2>
-        <hr />
+        <hr/>
 
         <section class="grade-eventos">
 
@@ -163,6 +167,7 @@
                         <i class="fa-solid fa-search"></i>
                     </button>
                 </div>
+
                 <!-- esse modal é unico oq pode ocasionar problemas para manipulação do DOm na vailda de eventos sugiro colocar 1 pra cada  -->
                 <dialog id="m_modal" class="modal">
                     <img src="../assets/img/jacobina.jpg"  alt="Imagem do Evento" >
@@ -172,6 +177,7 @@
                         <button class="btn-modal" onclick="fecharModal()">Fechar</button>
                     </div>
                 </dialog>
+
             </div>
 
         </section>
