@@ -4,7 +4,7 @@ const dataEl = document.getElementById('modalData');
 const horaEl = document.getElementById('modalHora');
 const localEl = document.getElementById('modalLocal');
 
-document.querySelectorAll('.ver-detalhes').forEach(btn => {
+document.querySelectorAll('.btn-detalhes').forEach(btn => {
     btn.addEventListener('click', () => {
         const nome = btn.dataset.nome;
         const data = btn.dataset.data;
@@ -26,9 +26,9 @@ function fecharModal() {
 
 function cancelarInscricao() {
     if (confirm('Deseja cancelar sua inscrição?')) {
-        // Aqui você pode fazer uma requisição para cancelar no backend com PHP
+        // Aqui pode fazer uma requisição para cancelar no backend com PHP
         alert('Inscrição cancelada com sucesso!');
         modal.close();
-        // Atualizar ou remover card se necessário
+    
     }
 }

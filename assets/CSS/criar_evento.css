@@ -117,7 +117,7 @@ header {
 
 .dropdown-menu {
   position: absolute;
-  top: 60px; /* abaixo do perfil */
+  top: 60px; 
   right: 0;
   background-color: white;
   border-radius: 10px;
@@ -159,7 +159,7 @@ header {
 }
 
 .dropdown-menu li:hover {
-  background-color: var(--amarelo); /* ou qualquer cor que combine */
+  background-color: var(--amarelo); 
 }
 
 /* Input de imagem */

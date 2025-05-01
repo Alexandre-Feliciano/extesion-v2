@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/CSS/minha_conta.css">
+    <title>CIRANDA/Minha conta</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">Logo</div>
+
+        <div class="barra-pesquisa">
+            <input type="text" class="campo-pesquisa" placeholder="Pesquisar">
+            <button class="botao-pesquisa">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </div>
+
+        <nav>
+
+            <a href="/Pages/criar_evento.html">Criar evento</a>
+
+        </nav>
+
+        <div class="conteiner-perfil hidden" id="user-toggle">
+
+            <div class="caixa-imagem">
+                <!-- <img src="#" alt="imagem do perfil"> -->
+            </div>
+
+            <p class="nome-usuario">Nome do usuário</p>
+
+            <i class="fas fa-angle-down" id="icone-nome"></i>
+
+            <nav class="dropdown-menu hidden" id="dropdown-menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    
+    <main>
+
+        <!-- Modal de confirmação para apagar a conta -->
+        
+        <dialog id="modalApagarConta">
+    
+            <h2>Tem certeza?</h2>
+
+            <p>Essa ação não pode ser desfeita. Sua conta será excluída permanentemente.</p>
+            <div class="dialog-buttons">
+                <button class="btn-confirmar-apagar" onclick="confirmarApagar()">Apagar</button>
+                <button class="btn-cancelar-apagar" onclick="fecharModalApagar()">Cancelar</button>
+            </div>
+    
+        </dialog>
+
+        <div class="container-perfil">
+
+            <h1>Configurações da Conta</h1>
+
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" value="João Silva">
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" value="joao@email.com">
+            </div>
+
+            <div class="botoes">
+                <button class="btn-salvar" onclick="salvarAlteracoes()">Salvar alterações</button>
+                <button class="btn-apagar" onclick="abrirModalApagar()">Apagar conta</button>
+            </div>
+
+        </div>
+
+        
+
+    </main>
+
+    <script src="/assets/JS/minha_conta.js"></script>
+</body>
+
+</html>

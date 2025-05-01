@@ -11,6 +11,27 @@
 
 <body>
 
+    <!-- Modal card-->
+
+    <dialog id="modalDetalhes">
+
+
+        <div class="modal-content">
+
+            <button class="fechar-modal" onclick="fecharModal()">✖</button>
+
+            <h2 id="modalTitulo"></h2>
+
+            <p><strong>Data:</strong> <span id="modalData"></span></p>
+            <p><strong>Hora:</strong> <span id="modalHora"></span></p>
+            <p><strong>Local:</strong> <span id="modalLocal"></span></p>
+
+            <button class="btn-cancelar" onclick="cancelarInscricao()">Cancelar Inscrição</button>
+
+        </div>
+
+    </dialog>
+
     <header>
 
         <div class="logo">Logo</div>
@@ -38,9 +59,14 @@
 
             <i class="fas fa-angle-down" id="icone-nome"></i>
 
+            <dialog>
+
+                
+            </dialog>
+
             <nav class="dropdown-menu hidden" id="dropdown-menu">
                 <ul>
-                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
+                    <li><a href="#"><i class="fas fa-ticket-alt"></i>Meus Ingressos</a></li>
                     <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
                     <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
                     <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
@@ -68,8 +94,7 @@
 
                     <span class="status">Confirmado</span>
                     <button class="btn-detalhes"
-                        onclick="abrirModal('Festival de Jazz', '30/06/2025 - 18:00', 'Teatro Principal - Mucugê')">Ver
-                        detalhes</button>
+                        onclick="abrirModal('Festival de Jazz', '30/06/2025 - 18:00', 'Teatro Principal - Mucugê')">Ver detalhes</button>
 
                 </div>
             </div>
@@ -109,24 +134,7 @@
             </div>
 
         </section>
-
-
-        <!-- Modal usando <dialog> -->
-        <dialog id="modalDetalhes">
-
-            <div class="modal-content">
-                <button class="fechar" onclick="fecharModal()">✖</button>
-
-                <h2 id="modalTitulo"></h2>
-
-                <p><strong>Data:</strong> <span id="modalData"></span></p>
-                <p><strong>Hora:</strong> <span id="modalHora"></span></p>
-                <p><strong>Local:</strong> <span id="modalLocal"></span></p>
-
-                <button class="btn-cancelar" onclick="cancelarInscricao()">Cancelar Inscrição</button>
-            </div>
-
-        </dialog>
+        
 
     </main>
 

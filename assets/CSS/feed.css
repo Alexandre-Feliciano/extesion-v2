@@ -170,8 +170,6 @@ nav a:hover {
   background-color: var(--amarelo); 
 }
 
-
-
 /* Sessão de evento */
 
 .imagem {
@@ -318,6 +316,7 @@ footer {
 }
 
 /* destinado ao modal */
+
 .modal {
  
   position: fixed; 
@@ -328,7 +327,7 @@ footer {
   height: 60%; 
   border-radius: 12px;
   background-color: #FBF8D9 ;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
  
   

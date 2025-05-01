@@ -11,7 +11,34 @@
 
 <body>
 
-    <dialog>
+    <!-- Todos os modais aqui -->
+
+    <dialog id="m_modal" class="modal">
+
+        <img src="../assets/img/jacobina.jpg" alt="Imagem do Evento">
+
+        <div class="modal_texto">
+
+            <h2>Detalhes do Evento</h2><br>
+            <p>Descrição completa do evento aqui.</p><br>
+            <button class="btn-modal" onclick="fecharModal()">Fechar</button>
+
+        </div>
+
+    </dialog>
+
+    <!-- Modal menu -->
+
+    <dialog class="dropdown-menu hidden" id="dropdown-menu">
+
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
 
         
     </dialog>
@@ -39,18 +66,9 @@
                 <!-- <img src="#" alt="imagem do perfil"> -->
             </div>
 
-            <p class="nome-usuario" >Nome do usuário</p>
+            <p class="nome-usuario">Nome do usuário</p>
 
             <i class="fas fa-angle-down" id="icone-nome"></i>
-
-            <nav class="dropdown-menu hidden" id="dropdown-menu">
-                <ul>
-                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Ingressos</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i> Minha conta</a></li>
-                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Meus eventos</a></li>
-                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
-                </ul>
-            </nav>
 
         </div>
 
@@ -63,7 +81,8 @@
         <div class="evento-texto">
 
             <h1> Melhores Eventos na <strong>Chapada</strong></h1>
-            <p>Confira os últimos eventos em toda a chapada. Quer você seja um morador local, novo na área ou esteja apenas de passagem, não faltam coisas diferentes para fazer.</p>
+            <p>Confira os últimos eventos em toda a chapada. Quer você seja um morador local, novo na área ou esteja
+                apenas de passagem, não faltam coisas diferentes para fazer.</p>
         </div>
 
     </section>
@@ -71,16 +90,15 @@
     <main>
 
         <h2>Eventos</h2>
-        <hr/>
+        <hr />
 
         <section class="grade-eventos">
 
-
-            
             <div class="cartao-evento">
 
                 <div class="imagem-evento">
-                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa" alt="Cobra">
+                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa"
+                        alt="Cobra">
                 </div>
 
                 <div class="conteudo-evento">
@@ -88,7 +106,8 @@
                     <h2>Festival da canção</h2>
 
                     <p class="texto-evento">
-                       O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores artistas da região!
+                        O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores
+                        artistas da região!
                     </p>
                     <p><strong>Local : </strong></p><br>
                     <h4><strong>qui, 13 mar., 17:00</strong></h4>
@@ -104,7 +123,8 @@
             <div class="cartao-evento">
 
                 <div class="imagem-evento">
-                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa" alt="Cobra">
+                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa"
+                        alt="Cobra">
                 </div>
 
                 <div class="conteudo-evento">
@@ -112,7 +132,8 @@
                     <h2>Festival da canção</h2>
 
                     <p class="texto-evento">
-                       O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores artistas da região!
+                        O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores
+                        artistas da região!
                     </p>
                     <p><strong>Local : </strong></p><br>
                     <h4><strong>qui, 13 mar., 17:00</strong></h4>
@@ -128,7 +149,8 @@
             <div class="cartao-evento">
 
                 <div class="imagem-evento">
-                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa" alt="Cobra">
+                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa"
+                        alt="Cobra">
                 </div>
 
                 <div class="conteudo-evento">
@@ -136,7 +158,8 @@
                     <h2>Festival da canção</h2>
 
                     <p class="texto-evento">
-                       O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores artistas da região!
+                        O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores
+                        artistas da região!
                     </p>
                     <p><strong>Local : </strong></p><br>
                     <h4><strong>qui, 13 mar., 17:00</strong></h4>
@@ -151,32 +174,27 @@
             </div>
             <div class="cartao-evento">
                 <div class="imagem-evento">
-                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa" alt="Cobra">
+                    <img src="https://f.i.uol.com.br/fotografia/2013/12/11/344736-970x600-1.jpeg" class="imagem-capa"
+                        alt="Cobra">
                 </div>
 
                 <div class="conteudo-evento">
                     <h2>Festival da canção</h2>
                     <p class="texto-evento">
-                        O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores artistas da região!
+                        O festival da canção celebram 15 anos de tradição da música popular brasileira, com os melhores
+                        artistas da região!
                     </p>
                     <p><strong>Local : </strong></p><br>
                     <h4><strong>qui, 13 mar., 17:00</strong></h4>
                     <h4><strong>Gratuito</strong></h4>
-                    
+
                     <button class="botao-icone" onclick="m_modal()">
                         <i class="fa-solid fa-search"></i>
                     </button>
                 </div>
 
                 <!-- esse modal é unico oq pode ocasionar problemas para manipulação do DOm na vailda de eventos sugiro colocar 1 pra cada  -->
-                <dialog id="m_modal" class="modal">
-                    <img src="../assets/img/jacobina.jpg"  alt="Imagem do Evento" >
-                    <div class="modal_texto">
-                        <h2>Detalhes do Evento</h2><br>
-                        <p>Descrição completa do evento aqui.</p><br>
-                        <button class="btn-modal" onclick="fecharModal()">Fechar</button>
-                    </div>
-                </dialog>
+
 
             </div>
 
