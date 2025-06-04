@@ -5,7 +5,7 @@
   --amareloClaro: #FBF8D9;
   --amarelo: #F6F0B1;
   --ambar: #fde68a;
-  --azul: #005E97;
+  --azul: #008DFF;
   --azulClaro: #4684cf;
   --azulEscuro: #002244;
   --cinza: #1f2937;
@@ -116,7 +116,7 @@ body {
 }
 
 .botao:hover {
-  background-color: #3b82f6;
+  background-color: var(--azulEscuro);
 }
 
 p{
@@ -127,4 +127,9 @@ p{
 
 a{
   text-decoration: none;
+}
+
+.logo-img{
+  width: 490px;
+  height: 250px;
 }
