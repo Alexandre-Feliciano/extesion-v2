@@ -54,7 +54,7 @@ header {
   border-radius: 2rem;       
   width: 11.25rem;           
   height: 2.5rem;            
-  padding: 0.25rem;          
+  padding: 1.5rem;          
   margin-right: 23.5rem;     
 }
 
@@ -322,3 +322,7 @@ textarea {
 .publish-btn:hover {
   background-color: var(--azulClaro);
 }
+.log>img{
+  border-radius: 100px;
+  padding: 0%;
+} 

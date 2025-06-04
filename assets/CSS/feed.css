@@ -52,7 +52,7 @@ header {
   border-radius: 2rem;       
   width: 11.25rem;           
   height: 2.5rem;            
-  padding: 0.25rem;          
+  padding: 1.5rem;          
   margin-right: 23.5rem;     
 }
 
@@ -378,3 +378,7 @@ footer {
   font-size: 1.2rem;
 }
 
+.log>img{
+  border-radius: 100px;
+  padding: 0%;
+}
